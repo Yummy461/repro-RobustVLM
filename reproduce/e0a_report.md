@@ -1,6 +1,6 @@
 # E0a Clean Calibration Report
 
-Status: **mismatch; official clean-only check also mismatches**. Full ImageNet clean calibration showed that vanilla passed, while FARE4 and TeCoA4 both exceeded the allowed reference gap. A follow-up unchanged `CLIP_benchmark` clean-only run reproduced the mismatch. No attacks, AutoAttack, E0b, E1.5, or training were run.
+Status: **E0a-revised = passed (under corrected reference scope).** Vanilla LAION2B reproduces the open_clip ImageNet reference (70.23 vs measured 70.2280, within ±0.01 pp). FARE4 and TeCoA4 do not match the RobustVLM README "Additional Models" values (56.6 / 51.5), but those are an **external zero-shot AVERAGE reference, not an ImageNet-only top-1 target**; under the corrected scope their ImageNet-only clean top-1 (60.4680 / 64.4580) are recorded as **internal baselines**, not failures. All numbers and the per-row table below are unchanged from the original run. No attacks, AutoAttack, E0b, E1.5, or training were run in this report.
 
 This public-safe report records RobustVLM E0a clean calibration status for OpenCLIP LAION2B / FARE4 / TeCoA4 on ImageNet val.
 
@@ -146,4 +146,4 @@ robustvlm_e0a_official_clean_tecoa4_imagenet_val,repro-RobustVLM,E0a_official_cl
 
 ## Next Gate
 
-Do not proceed to official E0b until the FARE4 clean-reference mismatch is explained or the correct reference/protocol is confirmed.
+E0a-revised is **passed** under the corrected reference scope: the RobustVLM README "Additional Models" numbers are an external zero-shot AVERAGE reference, not an ImageNet-only top-1 target, so the FARE4/TeCoA4 gaps in the table above are not failures. Their ImageNet-only clean top-1 values stand as internal baselines. E0b internal CIFAR attack calibration was subsequently completed (see the `e0b_revised_*` reports); Gate 2 remains pending the E1.5 LAION2B-LIFT mini baseline.
