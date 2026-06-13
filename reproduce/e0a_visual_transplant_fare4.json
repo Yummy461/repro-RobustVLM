@@ -1,0 +1,13 @@
+{
+  "base_text_model": "vanilla LAION2B ViT-B/16",
+  "clean_accuracy": 60.468,
+  "correct": 30234,
+  "imagenet_val": "/root/autodl-tmp/data/imagenet/val",
+  "interpretation": "If this matches direct hf-hub robust-model clean accuracy, the text tower and logit scale are unlikely to explain the mismatch.",
+  "mode": "full",
+  "num_samples": 50000,
+  "runtime_s": 88.56494903564453,
+  "status": "completed",
+  "variant": "vanilla_text_logit_scale_plus_fare4_visual",
+  "visual_source": "fare4"
+}

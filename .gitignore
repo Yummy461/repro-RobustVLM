@@ -1,0 +1,44 @@
+# Public-fork safety ignores
+
+# Datasets and extracted data
+data/
+datasets/
+ImageNet/
+ILSVRC*/
+cifar-*/
+cifar-100-python/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.pth.tar
+*.ckpt
+*.safetensors
+checkpoints/
+model_cache/
+
+# Run outputs and logs
+output/
+outputs/
+robustvlm_outputs/
+runs/
+logs/
+*.log
+*.jsonl.raw
+
+# Experiment trackers and caches
+wandb/
+tensorboard/
+.cache/
+__pycache__/
+*.py[cod]
+
+# Local envs and secrets
+.env
+.venv/
+env/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+

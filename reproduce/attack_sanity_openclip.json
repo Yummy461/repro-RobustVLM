@@ -1,0 +1,71 @@
+{
+  "model_key": "vanilla",
+  "monotonic_ok": true,
+  "results": [
+    {
+      "adv_correct": 397,
+      "clean_accuracy": 77.5390625,
+      "clean_correct": 397,
+      "epsilon_domain": "pixel_after_resize_before_normalization",
+      "epsilon_pixel_domain": 0.0,
+      "gradient_ok": true,
+      "max_abs_input_grad": 0.5684829354286194,
+      "model_key": "vanilla",
+      "random_start": false,
+      "robust_accuracy": 77.5390625,
+      "runtime_s": 9.498725652694702,
+      "step_size_pixel_domain": 0.0,
+      "steps": 5,
+      "subset_size": 512
+    },
+    {
+      "adv_correct": 0,
+      "clean_accuracy": 77.5390625,
+      "clean_correct": 397,
+      "epsilon_domain": "pixel_after_resize_before_normalization",
+      "epsilon_pixel_domain": 0.00392156862745098,
+      "gradient_ok": true,
+      "max_abs_input_grad": 1.5314805507659912,
+      "model_key": "vanilla",
+      "random_start": true,
+      "robust_accuracy": 0.0,
+      "runtime_s": 9.285050868988037,
+      "step_size_pixel_domain": 0.00196078431372549,
+      "steps": 5,
+      "subset_size": 512
+    },
+    {
+      "adv_correct": 0,
+      "clean_accuracy": 77.5390625,
+      "clean_correct": 397,
+      "epsilon_domain": "pixel_after_resize_before_normalization",
+      "epsilon_pixel_domain": 0.00784313725490196,
+      "gradient_ok": true,
+      "max_abs_input_grad": 0.9948293566703796,
+      "model_key": "vanilla",
+      "random_start": true,
+      "robust_accuracy": 0.0,
+      "runtime_s": 9.30125617980957,
+      "step_size_pixel_domain": 0.00392156862745098,
+      "steps": 5,
+      "subset_size": 512
+    },
+    {
+      "adv_correct": 0,
+      "clean_accuracy": 77.5390625,
+      "clean_correct": 397,
+      "epsilon_domain": "pixel_after_resize_before_normalization",
+      "epsilon_pixel_domain": 0.01568627450980392,
+      "gradient_ok": true,
+      "max_abs_input_grad": 1.72264564037323,
+      "model_key": "vanilla",
+      "random_start": true,
+      "robust_accuracy": 0.0,
+      "runtime_s": 9.385741949081421,
+      "step_size_pixel_domain": 0.00784313725490196,
+      "steps": 5,
+      "subset_size": 512
+    }
+  ],
+  "status": "passed"
+}

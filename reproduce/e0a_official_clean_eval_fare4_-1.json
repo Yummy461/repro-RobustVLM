@@ -1,0 +1,1 @@
+{"dataset": "imagenet1k-unverified", "model": "hf-hub:chs20/FARE4-ViT-B-16-laion2B-s34B-b88K", "pretrained": "", "beta": null, "task": "zeroshot_classification", "metrics": {"acc1": 0.6047, "acc5": 0.8482, "mean_per_class_recall": 0.6046800000000001}, "language": "en", "attack": "none", "iterations_adv": 100, "eps": 1.0, "norm": "Linf"}
